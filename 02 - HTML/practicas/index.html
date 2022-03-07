@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Montserrat';
+        }
+
+        .title, .subtitle {
+            text-align: center;
+        }
+
+        .sabores-pasteles, .adornos-pasteles {
+            text-align: center;
+        }
+
+        .pastel, .adorno {
+            display: inline-block;
+            text-align: center;
+            margin:0px auto;
+            margin-bottom: 2rem;
+        }
+
+        .pastel label, .adorno label {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        .realizar-pedido {
+            text-align: center;
+        }
+
+        .realizar-pedido label, .realizar-pedido input, .realizar-pedido select {
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .realizar-pedido input, .realizar-pedido select {
+            border: 1px #787878 solid;
+        }
+
+        #realizarPedido {
+            background-color: #227093;
+            color: white;
+            border: 0px;
+            border-radius: 5px;
+            padding: 10px;
+            width: 165px;
+        }
+
+        #realizarPedido:hover {
+            background-color: #34ace0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Pasteleria</h1>
+
+    <!-- BEGIN: Sabores de pasteles -->
+    <div class="sabores-pasteles">
+        <h2 class="subtitle">Sabores de pasteles</h2>
+
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="pastelFresa">Fresa</label>
+            <p>$350.00 MXN</p>
+            <input type="radio" id="pastelFresa" name="pastelElegido" value="pastelFresa">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="pastelTerciopeloRojo">Terciopelo rojo</label>
+            <p>$420.00 MXN</p>
+            <input type="radio" id="pastelTerciopeloRojo" name="pastelElegido" value="pastelTerciopeloRojo">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="pastelZanahoria">Pastel de Zanahoria</label>
+            <p>$298.00 MXN</p>
+            <input type="radio" id="pastelZanahoria" name="pastelElegido" value="pastelZanahoria">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="pastelChocolate">Chocolate</label>
+            <p>$300.00 MXN</p>
+            <input type="radio" id="pastelChocolate" name="pastelElegido" value="pastelChocolate">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="pastelCoco">Coco</label>
+            <p>$300.00 MXN</p>
+            <input type="radio" id="pastelCoco" name="pastelElegido" value="pastelCoco">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="pastelChocolateAleman">Chocolate Alemán</label>
+            <p>$450.00 MXN</p>
+            <input type="radio" id="pastelChocolateAleman" name="pastelElegido" value="pastelChocolateAleman">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="tartaColibri">Tarta Colibri</label>
+            <p>$250.00 MXN</p>
+            <input type="radio" id="tartaColibri" name="pastelElegido" value="tartaColibri">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="">
+            <label for="pastelLima">Pastel de Lima</label>
+            <p>$300.00 MXN</p>
+            <input type="radio" id="pastelLima" name="pastelElegido" value="pastelLima">
+        </div>
+    
+        <div class="pastel">
+            <img src="https://via.placeholder.com/250x250" alt="" for="pastelNapolitano">
+            <label for="pastelNapolitano">Napolitano</label>
+            <p>$350.00 MXN</p>
+            <input type="radio" id="pastelNapolitano" name="pastelElegido" value="pastelNapolitano">
+        </div>
+    </div>
+
+    <!-- END: Sabores de pasteles -->
+
+    <!-- BEGIN: Adornos de pasteles -->
+    <div class="adornos-pasteles">
+        <h2 class="subtitle">Adornos de pasteles</h2>
+        <div class="adorno">
+            <img src="https://via.placeholder.com/250x250" alt="" for="adornoCorona">
+            <label for="adornoCorona">Corona</label>
+            <p>$100.00 MXN</p>
+            <input type="radio" id="adornoCorona" name="adornoElegido" value="adornoCorona">
+        </div>
+    
+        <div class="adorno">
+            <img src="https://via.placeholder.com/250x250" alt="" for="adornoCorona">
+            <label for="adornoHappyBirthday">Happy Birthday</label>
+            <p>$120.00 MXN</p>
+            <input type="radio" id="adornoHappyBirthday" name="adornoElegido" value="adornoHappyBirthday">
+        </div>
+    </div>
+    <!-- END: Adornos de pasteles -->
+
+    <!-- BEGIN: Realizar pedido -->
+    <div class="realizar-pedido">
+        <h2 class="subtitle">Realizar Pedido</h2>
+        <form action="">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="correoElectronico">Correo electrónico</label>
+            <input type="text" name="correoElectronico" id="correoElectronico">
+
+            <label for="pastel">Pastel</label>
+            <select name="pastel" id="pastel">
+                <option>Seleccione un pastel</option>
+                <option value="pastelFresa">Fresa</option>
+                <option value="pastelTerciopeloRojo">Terciopelo rojo</option>
+                <option value="pastelZanahoria">Pastel de Zanahoria</option>
+                <option value="pastelChocolate">Chocolate</option>
+                <option value="pastelCoco">Coco</option>
+                <option value="pastelChocolateAleman">Chocolate Alemán</option>
+                <option value="tartaColibri">Tarta Colibri</option>
+                <option value="pastelLima">Pastel de Lima</option>
+                <option value="pastelNapolitano">Napolitano</option>
+            </select>
+
+            <label for="saborCombinado">Sabor combinado</label>
+            <select name="saborCombinado" id="saborCombinado">
+                <option>Combinar con...</option>
+                <option value="pastelFresa">Fresa</option>
+                <option value="pastelTerciopeloRojo">Terciopelo rojo</option>
+                <option value="pastelZanahoria">Pastel de Zanahoria</option>
+                <option value="pastelChocolate">Chocolate</option>
+                <option value="pastelCoco">Coco</option>
+                <option value="pastelChocolateAleman">Chocolate Alemán</option>
+                <option value="tartaColibri">Tarta Colibri</option>
+                <option value="pastelLima">Pastel de Lima</option>
+                <option value="pastelNapolitano">Napolitano</option>
+            </select>
+
+            <label for="adorno">Adorno</label>
+            <select name="adorno" id="adorno">
+                <option>Adornar con...</option>
+                <option value="adornoCorona">Corona</option>
+                <option value="adornoHappyBirthday">Happy Birthday</option>
+            </select>
+
+            <input type="submit" value="Realizar pedido" id="realizarPedido">
+        </form>
+    </div>
+    <!-- END: Realizar pedido -->
+
+    <script>
+        let radioButtonsPastel = document.querySelectorAll('input[name="pastelElegido"]');
+        let selectPastel = document.querySelector('#pastel');
+
+        let radioButtonsAdorno = document.querySelectorAll('input[name="adornoElegido"]');
+        let selectAdorno = document.querySelector('#adorno');
+        
+        // Escuchar cuando se elija un pastel por radio button
+        radioButtonsPastel.forEach( radioButton => {
+            radioButton.addEventListener('change', function(radioButton) {
+                selectPastel.value = radioButton.target.value;
+            });
+        });
+
+        // Escuchar cuando se elija un pastel por select
+        selectPastel.addEventListener('change', function(event) {
+            radioButtonsPastel.forEach(radioButton => {
+                radioButton.checked = (radioButton.value == event.target.value);
+            });
+        });
+
+        // Escuchar cuando se elija el adorno por radio button
+        radioButtonsAdorno.forEach( radioButton => {
+            radioButton.addEventListener('change', function(radioButton) {
+                selectAdorno.value = radioButton.target.value;
+            });
+        });
+
+        // Escuchar cuando se elija un adorno por select
+        selectAdorno.addEventListener('change', function(event) {
+            radioButtonsAdorno.forEach(radioButton => {
+                radioButton.checked = (radioButton.value == event.target.value);
+            });
+        });
+    </script>
+</body>
+</html>
